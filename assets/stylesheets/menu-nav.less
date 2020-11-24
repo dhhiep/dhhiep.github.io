@@ -1,0 +1,72 @@
+#menu-nav {
+  z-index: 2;
+  overflow-y: hidden;
+  box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.05);
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 70px;
+  margin-bottom: 75px;
+  nav {
+    background-color: @background_black;
+    box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.2),
+      0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12);
+    text-align: center;
+    display: flex;
+    white-space: nowrap;
+    justify-content: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    margin-top: -1px;
+    overflow-x: auto;
+    color: rgba(255, 255, 255, 0.75);
+    text-align: center;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+    ul.menu-nav-list {
+      margin-block-start: 1em;
+      margin-block-end: 1em;
+      margin-inline-start: 0px;
+      margin-inline-end: 0px;
+      padding-inline-start: 40px;
+      overflow-x: auto;
+      list-style: none;
+      text-decoration: none;
+      position: relative;
+      padding: 0;
+      margin: 0;
+      width: auto;
+      align-items: center;
+      -ms-overflow-style: none; /* Hide scrollbar for IE and Edge */
+      scrollbar-width: none; /* Hide scrollbar for Firefox */
+      &::-webkit-scrollbar {
+        display: none; /* Hide scrollbar */
+      }
+      li {
+        &.active {
+          border-bottom: 3px solid rgb(255, 207, 6);
+          span {
+            color: rgb(255, 207, 6);
+          }
+        }
+        padding: 10px 30px;
+        text-decoration: none;
+        display: inline-block;
+        border-bottom: 3px solid transparent;
+        white-space: nowrap;
+        text-align: center;
+        flex-grow: 1;
+        cursor: pointer;
+        span {
+          text-transform: uppercase;
+          font-family: "LondrinaSolid-Regular";
+          font-size: 1.375rem;
+          font-weight: 400;
+          color: @text_white;
+        }
+      }
+    }
+  }
+}

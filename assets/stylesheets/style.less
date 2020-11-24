@@ -1,0 +1,29 @@
+@background_black: rgb(0, 0, 0);
+@background_white: rgb(247, 247, 247);
+
+@text_white: rgb(255, 255, 255);
+@grey_text: rgb(113, 113, 113);
+@black_regular_text: rgb(51, 51, 51);
+@black_bold_text: rgb(0, 0, 0);
+
+@from_small: ~"screen and (min-width: 576px)"; // 30 rem
+@from_medium: ~"screen and (min-width: 768px)"; // 48 rem
+@from_large: ~"screen and (min-width: 992px)"; // 62 rem
+@from_xlarge: ~"screen and (min-width: 1200px)"; // 75 rem
+@from_xxlarge: ~"screen and (min-width: 1536px)"; // 96 rem
+
+html,
+body {
+  // scroll-behavior: smooth;
+  line-height: 1.15;
+  background-color: @background_white;
+  -webkit-font-smoothing: antialiased;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+@import "./fonts";
+@import "./top-nav";
+@import "./top-banner";
+@import "./menu-nav";
+@import "./home-menu";
