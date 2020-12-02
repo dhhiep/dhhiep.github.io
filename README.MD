@@ -1,4 +1,4 @@
-# Template order.stickys.com
+# Template
 
 ## Setup development environment with docker
   1. Install Docker for Ubuntu server ([https://docs.docker.com/install/linux/docker-ce/ubuntu/](https://docs.docker.com/install/linux/docker-ce/ubuntu/))
