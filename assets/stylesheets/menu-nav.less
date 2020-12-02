@@ -1,11 +1,10 @@
 #menu-nav {
   z-index: 2;
   overflow-y: hidden;
-  box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.05);
   position: -webkit-sticky; /* Safari */
   position: sticky;
   top: 70px;
-  margin-bottom: 75px;
+  margin-bottom: 65px;
   nav {
     background-color: @background_black;
     box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.2),
@@ -18,13 +17,14 @@
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: nowrap;
+    -webkit-overflow-scrolling: touch;
     flex-wrap: nowrap;
     margin-top: -1px;
     overflow-x: auto;
     color: rgba(255, 255, 255, 0.75);
     text-align: center;
     white-space: nowrap;
-    -webkit-overflow-scrolling: touch;
+    margin-bottom: 10px;
     ul.menu-nav-list {
       margin-block-start: 1em;
       margin-block-end: 1em;
